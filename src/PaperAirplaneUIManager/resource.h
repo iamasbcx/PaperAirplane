@@ -1,0 +1,55 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by PaperAirplaneUIManager.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_PAPERAIRPLANEUIMANAGER_DIALOG 102
+#define IDR_MAINFRAME                   128
+
+// Controls
+#define IDC_LIST_SOCKET_MAPPINGS        1000
+#define IDC_LIST_FILTER_PORTS           1001
+#define IDC_LIST_FILTER_ADDRESSES       1002
+#define IDC_LIST_FILTER_HOSTNAMES       1003
+#define IDC_LIST_BLACKLIST_PROCESSES    1004
+#define IDC_LIST_WHITELIST_PROCESSES    1005
+#define IDC_EDIT_LOG                    1006
+#define IDC_CHECK_ENABLE_PROXY          1007
+#define IDC_CHECK_RESOLVE_DNS_REMOTE    1008
+#define IDC_EDIT_PROXY_HOST             1009
+#define IDC_EDIT_PROXY_PORT             1010
+#define IDC_STATIC_CONNECTION_STATUS    1011
+
+// Input controls (for simple dialogs)
+#define IDC_EDIT_INPUT_PORT             1020
+#define IDC_EDIT_INPUT_ADDRESS          1021
+#define IDC_EDIT_INPUT_HOSTNAME         1022
+
+// Buttons
+#define IDC_BUTTON_APPLY_CONFIG         1100
+#define IDC_BUTTON_EXPORT_CONFIG        1101
+#define IDC_BUTTON_IMPORT_CONFIG        1102
+#define IDC_BUTTON_ADD_FILTER_PORT      1103
+#define IDC_BUTTON_REMOVE_FILTER_PORT   1104
+#define IDC_BUTTON_ADD_FILTER_ADDRESS   1105
+#define IDC_BUTTON_REMOVE_FILTER_ADDRESS 1106
+#define IDC_BUTTON_ADD_FILTER_HOSTNAME  1107
+#define IDC_BUTTON_REMOVE_FILTER_HOSTNAME 1108
+#define IDC_BUTTON_ADD_BLACKLIST_PROCESS 1109
+#define IDC_BUTTON_REMOVE_BLACKLIST_PROCESS 1110
+#define IDC_BUTTON_ADD_WHITELIST_PROCESS 1111
+#define IDC_BUTTON_REMOVE_WHITELIST_PROCESS 1112
+#define IDC_BUTTON_CLEAR_LOG            1113
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        130
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1114
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

@@ -1,0 +1,249 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\PaperAirplaneUIManager.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PaperAirplaneUIManager.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PaperAirplane UI Manager"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "PaperAirplane UI Manager, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2024",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PAPERAIRPLANEUIMANAGER_DIALOG DIALOGEX 0, 0, 620, 480
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PaperAirplane UI Manager"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Connection Status",IDC_STATIC,7,7,606,30
+    LTEXT           "Status: Disconnected",IDC_STATIC_CONNECTION_STATUS,15,18,200,12
+
+    GROUPBOX        "Proxy Configuration",IDC_STATIC,7,42,300,70
+    CONTROL         "Enable Proxy Client",IDC_CHECK_ENABLE_PROXY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,55,100,10
+    CONTROL         "Resolve DNS Remote",IDC_CHECK_RESOLVE_DNS_REMOTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,70,100,10
+    LTEXT           "Proxy Host:",IDC_STATIC,15,88,50,8
+    EDITTEXT        IDC_EDIT_PROXY_HOST,70,85,150,14,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_STATIC,230,88,20,8
+    EDITTEXT        IDC_EDIT_PROXY_PORT,255,85,45,14,ES_AUTOHSCROLL | ES_NUMBER
+
+    GROUPBOX        "Socket Mappings",IDC_STATIC,7,117,606,120
+    CONTROL         "",IDC_LIST_SOCKET_MAPPINGS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,130,591,100
+
+    GROUPBOX        "Filter Rules",IDC_STATIC,7,242,606,120
+    LTEXT           "Filter Ports:",IDC_STATIC,15,255,50,8
+    CONTROL         "",IDC_LIST_FILTER_PORTS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,265,120,60
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_FILTER_PORT,15,330,55,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_FILTER_PORT,75,330,55,14
+    EDITTEXT        IDC_EDIT_INPUT_PORT,15,348,120,14,ES_AUTOHSCROLL | ES_NUMBER
+
+    LTEXT           "Filter Addresses:",IDC_STATIC,145,255,60,8
+    CONTROL         "",IDC_LIST_FILTER_ADDRESSES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,145,265,120,60
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_FILTER_ADDRESS,145,330,55,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_FILTER_ADDRESS,205,330,55,14
+    EDITTEXT        IDC_EDIT_INPUT_ADDRESS,145,348,120,14,ES_AUTOHSCROLL
+
+    LTEXT           "Filter Hostnames:",IDC_STATIC,275,255,65,8
+    CONTROL         "",IDC_LIST_FILTER_HOSTNAMES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,275,265,150,60
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_FILTER_HOSTNAME,275,330,70,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_FILTER_HOSTNAME,350,330,70,14
+    EDITTEXT        IDC_EDIT_INPUT_HOSTNAME,275,348,150,14,ES_AUTOHSCROLL
+
+    GROUPBOX        "Process Lists",IDC_STATIC,7,367,606,65
+    LTEXT           "Blacklist:",IDC_STATIC,15,380,40,8
+    CONTROL         "",IDC_LIST_BLACKLIST_PROCESSES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,390,280,35
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_BLACKLIST_PROCESS,300,390,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_BLACKLIST_PROCESS,300,408,50,14
+
+    LTEXT           "Whitelist:",IDC_STATIC,360,380,40,8
+    CONTROL         "",IDC_LIST_WHITELIST_PROCESSES,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,360,390,220,35
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_WHITELIST_PROCESS,585,390,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_WHITELIST_PROCESS,585,408,50,14
+
+    GROUPBOX        "Actions",IDC_STATIC,320,42,293,70
+    PUSHBUTTON      "Apply Configuration",IDC_BUTTON_APPLY_CONFIG,330,55,130,20
+    PUSHBUTTON      "Export Configuration",IDC_BUTTON_EXPORT_CONFIG,330,80,130,20
+    PUSHBUTTON      "Import Configuration",IDC_BUTTON_IMPORT_CONFIG,470,55,130,20
+
+    GROUPBOX        "Log",IDC_STATIC,7,437,606,36
+    EDITTEXT        IDC_EDIT_LOG,15,448,550,20,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEAR_LOG,570,448,35,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "PaperAirplane"
+            VALUE "FileDescription", "PaperAirplane UI Manager"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PaperAirplaneUIManager.exe"
+            VALUE "LegalCopyright", "(c) PaperAirplane.  All rights reserved."
+            VALUE "OriginalFilename", "PaperAirplaneUIManager.exe"
+            VALUE "ProductName", "PaperAirplane UI Manager"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PAPERAIRPLANEUIMANAGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 613
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 473
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About PaperAirplane UI Manager..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\PaperAirplaneUIManager.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
